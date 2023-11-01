@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="/eomp/CSS/style.css">
-    <link rel="icon" href="https://i.postimg.cc/rp402pBn/profile.jpg" type="image/x-icon"/>
+    <link rel="icon" href="https://i.postimg.cc/XNPvnBYb/logo.png" type="image/x-icon"/>
     <style>
         nav {
   overflow: hidden;
   position: fixed;
   top: 0;
+  z-index: 1;
     }
         nav a {
   float: left;
@@ -30,6 +31,52 @@
   background-color: #04AA6D;
   color: white;
         }
+        .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #E5C263;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
@@ -38,13 +85,13 @@
             <nav>
             <img src="https://i.postimg.cc/3RncRnMW/logo.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -90,7 +137,215 @@
         </div>
     </div>
 
+   <!----Skills---->
+   <div id="Skills">
+    <div class="container-fluid">
+        <div class="rows">
+            <div class="skills col-12">
+                <p><h1 id="skills" class="sub-titles ">Skills</h1></p><br>
+                <h3>Hard Skills:</h3>
+            </div>
+            <section class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://i.postimg.cc/N0jFZXy8/html.png" alt="html" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>HTML</h1> 
+                    <p>A markup language for the web that defines the structure of web pages.</p> 
+                  </div>
+                </div>
+              </div>       
+            </section>
+            <section class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://i.postimg.cc/cCcjD3Zp/css.jpg" alt="css" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>CSS</h1> 
+                    <p>Cascading Style Sheets</p>
+                    <p>Used to style and layout web pages.</p> 
+                  </div>
+                </div>
+              </div>       
+            </section>
+            <section class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://i.postimg.cc/SQT0cP7S/bootstrap.png" alt="bootstrap" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>CSS</h1> 
+                    <p> A free, open source front-end development framework for the creation of websites and web apps.</p> 
+                  </div>
+                </div>
+              </div>       
+            </section>
+        </div>
+    </div>
+</div>
+<div id="Skills">
+  <div class="container-fluid">
+      <div class="rows">
+          <div class="skills col-12">
+              <h3>Soft Skills:</h3>
+          </div>
+          <section class="col">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://i.postimg.cc/MHykcHF3/communication-interpersonal-skills.png" alt="communication-interpersonal-skills" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Communication and interpersonal skills</h1> 
+                  <p>Active listening, Leadership, Dependability.</p> 
+                </div>
+              </div>
+            </div>       
+          </section>
+          <section class="col">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://i.postimg.cc/4NWKn3Rx/problem-solving.jpg" alt="problem-solving" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Problem solver</h1> 
+                  <p>The ability to handle difficult or unexpected situations in the workplace as well as complex business challenges.</p>
+                </div>
+              </div>
+            </div>       
+          </section>
+          <section class="col">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://i.postimg.cc/435jRjhq/time-management.webp" alt="time-management" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Time Management</h1> 
+                  <p>Goal setting, Decision-making, Prioritization.</p> 
+                </div>
+              </div>
+            </div>       
+          </section>
+      </div>
+  </div>
+</div>
     
+
+<!----Education---->
+<div id="Education">
+<div class="container-fluid">
+  <div class="education col-12">
+    <p><h1 id="education" class="sub-titles ">Education</h1></p><br>
+  <table class="table table-danger">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">School</th>
+        <th scope="col">Years</th>
+        <th scope="col">Other</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><img style="width: 100px;" src="https://i.postimg.cc/BbGH3ZPB/primary-school.jpg" alt="primary-school"></th>
+        <td>Kannemeyer Primary School</td>
+        <td>2010 - 2017</td>
+        <td>I learnt how to read and write as well as things that helped me gain knowlege on different situations.</td>
+      </tr>
+      <tr>
+        <th scope="row"><img style="width: 100px;" src="https://i.postimg.cc/NM8SBMPg/high-school.jpg" alt="high-school"></th>
+        <td>South Peninsula High School</td>
+        <td>2018 - 2022</td>
+        <td>I carried on learning in highschool to a further and much greater extent to which I learnt new information.<br> I matriculated at South Peninsula High School with a Bachelor’s Pass.</td>
+      </tr>
+      <tr>
+        <th scope="row"><img style="width: 100px;" src="https://i.postimg.cc/QMffjypy/college.jpg" alt="college"></th>
+        <td>Life Choices Coding Academy</td>
+        <td>2023</td>
+        <td>I am a current student at Life Choices Coding Academy, even though it was not something I did not look into I am enjoying it and learning so much new things that I am starting to gain interest in.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<!----projects---->
+<div id="projects">
+  <div class="container-fluid">
+    <h1 class="sub-titless">Projects</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="https://i.postimg.cc/dVsZDhTV/Screenshot-2023-11-01-155233.png">
+        <div class="layer">
+          <h3>To Do List</h3>
+          <p>A list of tasks that need to be completed, typically organized in order of priority.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+          </svg>
+          <a href=""><i class="bi bi-link fa-10x"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://i.postimg.cc/3w4kYS8h/calculator2.png">
+        <div class="layer">
+          <h3>Calculator</h3>
+          <p>Something used for making mathematical calculations, in particular a small electronic device with a keyboard and a visual display.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+          </svg>
+          <i class="bi bi-link"><a href="#"></a></i>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://i.postimg.cc/Tw2wwgDd/keyboard.png">
+        <div class="layer">
+          <h3>Keyboard</h3>
+          <p>A panel of keys that operate a computer or typewriter.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+          </svg>
+          <i class="bi bi-link"><a href="#"></a></i>
+        </div>
+      </div>
+    </div>
+    <div class="work-list">
+      <div class="work">
+        <img src="https://i.postimg.cc/d3XYmTSK/netflix.png">
+        <div class="layer">
+          <h3>Netflix</h3>
+          <p>A portmanteau of the words “internet” and “flicks”</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+          </svg>
+          <a href=""><i class="bi bi-link fa-10x"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://i.postimg.cc/Zqc30pTw/logo2.png">
+        <div class="layer">
+          <h3>E-commerce Site</h3>
+          <p>A retail business establishment, that specializes in selling (and also buying) jewellery and watches.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+          </svg>
+          <i class="bi bi-link"><a href="#"></a></i>
+        </div>
+    
+    
+    
+
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
