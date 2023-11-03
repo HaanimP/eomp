@@ -7,91 +7,22 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="/eomp/CSS/style.css">
     <link rel="icon" href="https://i.postimg.cc/XNPvnBYb/logo.png" type="image/x-icon"/>
-    <style>
-        nav {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-    }
-        nav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-         nav a:hover {
-  background-color: #DB9714;
-  color: #9F241D;
-    }
-
-        nav a.active {
-  background-color: #04AA6D;
-  color: white;
-        }
-        .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #E5C263;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-</style>
+    <script src="https://kit.fontawesome.com/aaa9727a99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
     <div id="header">
-        <div class="container">
-            <nav>
+        <div  class="container">
+            <nav >
             <img src="https://i.postimg.cc/3RncRnMW/logo.png" class="logo">
                 <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-person"></i> About</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+                    <li><a href="#education"><i class="fa-solid fa-school"></i> Education</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+                    <li><a href="#testimonials"><i class="fa-solid fa-comment"></i> Testimonials</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -124,8 +55,9 @@
     <div id="about">
         <div class="container-fluid">
             <div class="row">
-                <div class="about col-6">
-                    <img style="width:600px" src="https://i.postimg.cc/BQKbnfxL/profile2.jpg">
+              <div class="col-1"></div>
+                <div class="about col-5">
+                    <img class="aboutimg" src="https://i.postimg.cc/BQKbnfxL/profile2.jpg">
                 </div>
                 <div class="about col-6">
                     <h1 class="sub-title">About Me</h1>
@@ -139,48 +71,48 @@
 
    <!----Skills---->
    <div id="Skills">
-    <div class="container-fluid">
+    <div id="container" >
         <div class="rows">
             <div class="skills col-12">
                 <p><h1 id="skills" class="sub-titles ">Skills</h1></p><br>
-                <h3>Hard Skills:</h3>
+                <h3 id="hardSkills">Hard Skills:</h3>
             </div>
             <section class="col">
-              <div class="flip-card">
+              <div id="move" class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="https://i.postimg.cc/N0jFZXy8/html.png" alt="html" style="width:300px;height:300px;">
+                    <img class="skillsimg" src="https://i.postimg.cc/N0jFZXy8/html.png" alt="html">
                   </div>
                   <div class="flip-card-back">
                     <h1>HTML</h1> 
-                    <p>A markup language for the web that defines the structure of web pages.</p> 
+                    <p>A markup language for the web that defines the structure of web pages.<br><i class="fa-solid fa-face-smile"></i> Intermediate</p>
                   </div>
                 </div>
               </div>       
             </section>
             <section class="col">
-              <div class="flip-card">
+              <div id="move" class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="https://i.postimg.cc/cCcjD3Zp/css.jpg" alt="css" style="width:300px;height:300px;">
+                    <img class="skills-img" src="https://i.postimg.cc/bY7k3cLj/css.png" alt="css">
                   </div>
                   <div class="flip-card-back">
                     <h1>CSS</h1> 
                     <p>Cascading Style Sheets</p>
-                    <p>Used to style and layout web pages.</p> 
+                    <p>Used to style and layout web pages.<br><i class="fa-solid fa-face-smile"></i> Intermediate</p> 
                   </div>
                 </div>
               </div>       
             </section>
             <section class="col">
-              <div class="flip-card">
+              <div id="move" class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <img src="https://i.postimg.cc/SQT0cP7S/bootstrap.png" alt="bootstrap" style="width:300px;height:300px;">
+                    <img class="skillsimg" src="https://i.postimg.cc/SQT0cP7S/bootstrap.png" alt="bootstrap">
                   </div>
                   <div class="flip-card-back">
                     <h1>CSS</h1> 
-                    <p> A free, open source front-end development framework for the creation of websites and web apps.</p> 
+                    <p> A free, open source front-end development framework for the creation of websites and web apps.<br><i class="fa-solid fa-face-smile"></i> Intermediate</p> 
                   </div>
                 </div>
               </div>       
@@ -189,16 +121,16 @@
     </div>
 </div>
 <div id="Skills">
-  <div class="container-fluid">
+  <div id="container">
       <div class="rows">
           <div class="skills col-12">
-              <h3>Soft Skills:</h3>
+              <h3 id="softSkills">Soft Skills:</h3>
           </div>
           <section class="col">
-            <div class="flip-card">
+            <div id="move" class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="https://i.postimg.cc/MHykcHF3/communication-interpersonal-skills.png" alt="communication-interpersonal-skills" style="width:300px;height:300px;">
+                  <img class="skillsimg" src="https://i.postimg.cc/MHykcHF3/communication-interpersonal-skills.png" alt="communication-interpersonal-skills">
                 </div>
                 <div class="flip-card-back">
                   <h1>Communication and interpersonal skills</h1> 
@@ -208,10 +140,10 @@
             </div>       
           </section>
           <section class="col">
-            <div class="flip-card">
+            <div id="move" class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="https://i.postimg.cc/4NWKn3Rx/problem-solving.jpg" alt="problem-solving" style="width:300px;height:300px;">
+                  <img class="skillsimg" src="https://i.postimg.cc/4NWKn3Rx/problem-solving.jpg" alt="problem-solving">
                 </div>
                 <div class="flip-card-back">
                   <h1>Problem solver</h1> 
@@ -221,10 +153,10 @@
             </div>       
           </section>
           <section class="col">
-            <div class="flip-card">
+            <div id="move" class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="https://i.postimg.cc/435jRjhq/time-management.webp" alt="time-management" style="width:300px;height:300px;">
+                  <img class="skillsimg" src="https://i.postimg.cc/435jRjhq/time-management.webp" alt="time-management">
                 </div>
                 <div class="flip-card-back">
                   <h1>Time Management</h1> 
@@ -254,19 +186,19 @@
     </thead>
     <tbody>
       <tr>
-        <th scope="row"><img style="width: 100px;" src="https://i.postimg.cc/BbGH3ZPB/primary-school.jpg" alt="primary-school"></th>
+        <th scope="row"><img class="images" src="https://i.postimg.cc/BbGH3ZPB/primary-school.jpg" alt="primary-school"></th>
         <td>Kannemeyer Primary School</td>
         <td>2010 - 2017</td>
         <td>I learnt how to read and write as well as things that helped me gain knowlege on different situations.</td>
       </tr>
       <tr>
-        <th scope="row"><img style="width: 100px;" src="https://i.postimg.cc/NM8SBMPg/high-school.jpg" alt="high-school"></th>
+        <th scope="row"><img class="images" src="https://i.postimg.cc/NM8SBMPg/high-school.jpg" alt="high-school"></th>
         <td>South Peninsula High School</td>
         <td>2018 - 2022</td>
-        <td>I carried on learning in highschool to a further and much greater extent to which I learnt new information.<br> I matriculated at South Peninsula High School with a Bachelor’s Pass.</td>
+        <td>I carried on learning in highschool to a further and much greater extent to which I learnt new information.<br> I matriculated at South Peninsula High School with a Bachelor’s Pass.<br> Distinctions: Afrikaans, Life skills, History.</td>
       </tr>
       <tr>
-        <th scope="row"><img style="width: 100px;" src="https://i.postimg.cc/QMffjypy/college.jpg" alt="college"></th>
+        <th scope="row"><img class="images" src="https://i.postimg.cc/QMffjypy/college.jpg" alt="college"></th>
         <td>Life Choices Coding Academy</td>
         <td>2023</td>
         <td>I am a current student at Life Choices Coding Academy, even though it was not something I did not look into I am enjoying it and learning so much new things that I am starting to gain interest in.</td>
@@ -278,70 +210,163 @@
 
 <!----projects---->
 <div id="projects">
-  <div class="container-fluid">
+  <div class="container2">
     <h1 class="sub-titless">Projects</h1>
     <div class="work-list">
       <div class="work">
-        <img src="https://i.postimg.cc/dVsZDhTV/Screenshot-2023-11-01-155233.png">
+        <img class="projectimg" src="https://i.postimg.cc/dVsZDhTV/Screenshot-2023-11-01-155233.png">
         <div class="layer">
           <h3>To Do List</h3>
           <p>A list of tasks that need to be completed, typically organized in order of priority.</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
-          </svg>
-          <a href=""><i class="bi bi-link fa-10x"></i></a>
+          <a href="https://github.com/HaanimP/toDoList.git"><i class="fa-brands fa-github"></i></a>
+          <a href="https://to-do-list-gxjafk2sp-haanims-projects.vercel.app/"><i class="fa-solid fa-link"></i></a>
         </div>
       </div>
       <div class="work">
-        <img src="https://i.postimg.cc/3w4kYS8h/calculator2.png">
+        <img class="projectimg" src="https://i.postimg.cc/3w4kYS8h/calculator2.png">
         <div class="layer">
           <h3>Calculator</h3>
           <p>Something used for making mathematical calculations, in particular a small electronic device with a keyboard and a visual display.</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
-          </svg>
-          <i class="bi bi-link"><a href="#"></a></i>
+          <a href="https://github.com/HaanimP/calculator.git"><i class="fa-brands fa-github"></i></a>
+          <a href="https://calculator-five-red.vercel.app/"><i class="fa-solid fa-link"></i></a>
         </div>
       </div>
       <div class="work">
-        <img src="https://i.postimg.cc/Tw2wwgDd/keyboard.png">
+        <img class="projectimg" src="https://i.postimg.cc/Tw2wwgDd/keyboard.png">
         <div class="layer">
           <h3>Keyboard</h3>
           <p>A panel of keys that operate a computer or typewriter.</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
-          </svg>
-          <i class="bi bi-link"><a href="#"></a></i>
+          <a href="https://github.com/HaanimP/Keyboard.git"><i class="fa-brands fa-github"></i></a>
+          <a href="https://keyboard-pied.vercel.app/"><i class="fa-solid fa-link"></i></a>
         </div>
       </div>
     </div>
     <div class="work-list">
       <div class="work">
-        <img src="https://i.postimg.cc/d3XYmTSK/netflix.png">
+        <img class="projectimg" src="https://i.postimg.cc/zvW7YR5q/netflix3.png">
         <div class="layer">
           <h3>Netflix</h3>
           <p>A portmanteau of the words “internet” and “flicks”</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
-          </svg>
-          <a href=""><i class="bi bi-link fa-10x"></i></a>
+        <a href="https://github.com/HaanimP/netflix.git"><i class="fa-brands fa-github"></i></a>
+        <a href="https://netflix-one-azure.vercel.app/"><i class="fa-solid fa-link"></i></a>
         </div>
       </div>
       <div class="work">
-        <img src="https://i.postimg.cc/Zqc30pTw/logo2.png">
+        <img class="projectimg" src="https://i.postimg.cc/Zqc30pTw/logo2.png">
         <div class="layer">
           <h3>E-commerce Site</h3>
           <p>A retail business establishment, that specializes in selling (and also buying) jewellery and watches.</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
-          </svg>
-          <i class="bi bi-link"><a href="#"></a></i>
+          <a href="https://github.com/HaanimP/e-commerce.git"><i class="fa-brands fa-github"></i></a>
+          <a href="https://e-commerce-theta-pearl.vercel.app/"><i class="fa-solid fa-link"></i></a>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----testimonials---->  
+<div id="testimonials">
+  <div class="container-fluid">
+    <h1 class="sub-titlesss">Testimonials</h1>
+    <div class="services-list">
+      <div class="servicess-list">
+        <img class="testimg" src="https://i.postimg.cc/x8ZydcWF/image-5.png"><br>
+        <h2 class="words">Ammara Hoosen</h2>
+        <p>"Haanim Pietersen is not only a pleasant individual to work with, but she radiates warmth and positivity where ever she goes. She is a hard-working, dedicated and intelligent person. No matter how hectic or challenging the situation, she maintains an unwavering sense of composure and always finds a way to uplift those around her. I wholeheartedly recommend her."<br> - Classmate</p>
+      </div>
+      <div class="servicess-list">
+        <img class="testimg" src="https://i.postimg.cc/sggmJCJc/Screenshot-20231028-194023-Gallery.jpg"><br>
+        <h2 class="words">Aneeqa Louw</h2>
+        <p>"Haanim is a soft soul. She's absolutely amazing to be around and cares so much about her peers. Her creativity is top notch and I love her persistence to make everything perfect and running smoothly. I definitely recommend Haanim as a suitable employee as she's a hard and consistent worker."<br> - Classmate</p>
+      </div>
+      <div class="servicess-list">
+        <img class="testimg" src="https://i.postimg.cc/c4MkmmGs/IMG20230528163525.jpg"><br>
+        <h2 class="words">Chrishano Burns</h2>
+        <p>"Here's a small testimonial about my experience working with Haanim. From the moment we started I was impressed by their exceptional skills and unwavering dedication. Haanim consistently demonstrates a remarkable level of professionalism and expertise in everything she does."<br> - Classmate</p>
+      </div>
+    </div>
+
+    <div class="services-list">
+      <div class="servicess-list">
+        <img class="testimg" src="https://i.postimg.cc/kMpsnpNY/C12-C2-Eighton-Lee-Paulse-3.jpg"><br>
+        <h2 class="words">Eighton-Lee Paulse</h2>
+      <p>"Haanim is a highly dedicated individual with an amazing work ethic, and her personality can light up a room. I would definitely recommend her."<br> - Colleague</p>
+      </div>
+      <div class="servicess-list">
+        <img class="testimg" src="https://i.postimg.cc/xdbKsfNK/46715.jpg"><br>
+        <h2 class="words">Heather Mtuedwa</h2>
+        <p>"Its always a pleasure to work along side with Haanim Pietrsen. She is shy quite person but always has great positive energy, and is always willing to go the extra mile when it comes to her work. Her attention to every single detail and following what needs to be done is what makes it so great to work beside her everyday. I highly recommend Haanim Pietersen to any one that is looking for a hardworker in their team."<br> - Classmate</p>
+      </div>
+      <div class="servicess-list">
+        <img class="testimg" src="https://i.postimg.cc/SRm1F2W0/20220501-113517.jpg"><br>
+        <h2 class="words">Kelsey Chloe Oosthuizen</h2>
+        <p>"Haanim Pietersen is an amazing person and a great colleague to work with. She is very helpful and all about teamwork.
+          I would recommend Haanim if you're looking for someone who is good at designing and developing websites."<br> - Classmate</p>
+      </div>
+    </div>
+
+    <div class="services-list">
+      <div class="servicess-list">
+        <img class="testimg"  src="https://i.postimg.cc/435JRtcZ/Matthew.png"><br>
+        <h2 class="words">Matthew Dean Brown</h2>
+        <p>"Haanim is a creative individual. She shows consistency in her work ethic and ability to learn."<br> - Lecturer</p>
+      </div>
+      <div class="servicess-list">
+        <img class="testimg" src="https://i.postimg.cc/d0Tw4g5g/summer.png"><br>
+        <h2 class="words">Summer De Wet</h2>
+        <p>"In the time that I have known her, Haanim has proven herself to be exceptional at whatever she sets out to do,demonstrating a strong aptitude for coding and a deep passion for technology. What makes Haanim different from the rest is her unwavering commitment to excellence approaching every project with a high level of professionalism and dedication.Her attention to detail and ability to work collaboratively makes her an invaluable member of any team"<br> - Classmate</p>
+      </div>
+   </div>
+  </div>
+</div>
+
+   <!----Contact---->
+   <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-titlessss">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> haanimpietersen@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 0714332419</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100089705331205"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/nimmie_13"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://instagram.com/the.one.and.only.haanim?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://za.linkedin.com/in/haanim-pietersen-172bb9264"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="/eomp/images/249248" download class="btn">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="https://formspree.io/f/xoqoywpy"method="POST">
+            <label>
+              Your Name:
+              <input type="name" name="Name">
+            </label><br>
+            <label>
+              Your email:
+              <input type="email" name="Email">
+            </label><br>
+            <label>
+              Your message:
+              <textarea rows="6" name="Message"></textarea>
+            </label><br>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>All rights reserved to Haanim Pietersen <i class="fa-regular fa-copyright"></i> 2023.</p>
+    </div>
+   </div>
+
+   
+    
+    
+
+    
+  </div>
+</div>
     
     
     
