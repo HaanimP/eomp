@@ -82,7 +82,7 @@ body{
 
 #header{
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
     background-image: url(https://i.postimg.cc/sfcchsjL/background5.jpg) ;
     background-size: cover;
     background-position: center;
@@ -137,12 +137,14 @@ nav ul li{
 #about{
     padding: 80px 0;
     color: #51822B;
+ folderStructure
     z-index: -1;
     padding-top: 10%;
 }
 
 .aboutimg{
     width: 600px;
+ main
 }
 
 .row{
@@ -173,11 +175,11 @@ body {background: #222;}
     box-shadow: inset 0px 0px 1px #222;
     border: 1px solid #333;
     z-index: 1;
-    -webkit-animation: falling 5s 0s infinite;
+    -animation: falling 5s 0s infinite;
 }
 
-#leaves i:nth-of-type(2n) { -webkit-animation: falling2 5s 0s infinite; }
-#leaves i:nth-of-type(3n) { -webkit-animation: falling3 5s 0s infinite; }
+#leaves i:nth-of-type(2n) { -animation: falling2 5s 0s infinite; }
+#leaves i:nth-of-type(3n) { -animation: falling3 5s 0s infinite; }
 
 #leaves i:before {
   position: absolute;
@@ -221,21 +223,21 @@ body {background: #222;}
 #leaves i:nth-of-type(3n+2):before  { height:4px; width:4px; top:12px; right:1px; }
 #leaves i:nth-of-type(3n+2):after  { height:10px; width:2px; top:1px; left:8px; }
 
-#leaves i:nth-of-type(n)   { -webkit-animation-delay: 1.9s;}
-#leaves i:nth-of-type(2n)  { -webkit-animation-delay: 3.9s;}
-#leaves i:nth-of-type(3n)  { -webkit-animation-delay: 2.3s;}
-#leaves i:nth-of-type(4n)  { -webkit-animation-delay: 4.4s;}
-#leaves i:nth-of-type(5n)  { -webkit-animation-delay: 5s;  }
-#leaves i:nth-of-type(6n)  { -webkit-animation-delay: 3.5s;}
-#leaves i:nth-of-type(7n)  { -webkit-animation-delay: 2.8s;}
-#leaves i:nth-of-type(8n)  { -webkit-animation-delay: 1.5s;}
-#leaves i:nth-of-type(9n)  { -webkit-animation-delay: 3.3s;}
-#leaves i:nth-of-type(10n) { -webkit-animation-delay: 2.5s;}
-#leaves i:nth-of-type(11n) { -webkit-animation-delay: 1.2s;}
-#leaves i:nth-of-type(12n) { -webkit-animation-delay: 4.1s;}
-#leaves i:nth-of-type(13n) { -webkit-animation-delay: 1s;  }
-#leaves i:nth-of-type(14n) { -webkit-animation-delay: 4.7s;}
-#leaves i:nth-of-type(15n) { -webkit-animation-delay: 3s;  }
+#leaves i:nth-of-type(n)   { -animation-delay: 1.9s;}
+#leaves i:nth-of-type(2n)  { -animation-delay: 3.9s;}
+#leaves i:nth-of-type(3n)  { -animation-delay: 2.3s;}
+#leaves i:nth-of-type(4n)  { -animation-delay: 4.4s;}
+#leaves i:nth-of-type(5n)  { -animation-delay: 5s;  }
+#leaves i:nth-of-type(6n)  { -animation-delay: 3.5s;}
+#leaves i:nth-of-type(7n)  { -animation-delay: 2.8s;}
+#leaves i:nth-of-type(8n)  { -animation-delay: 1.5s;}
+#leaves i:nth-of-type(9n)  { -animation-delay: 3.3s;}
+#leaves i:nth-of-type(10n) {-animation-delay: 2.5s;}
+#leaves i:nth-of-type(11n) { -animation-delay: 1.2s;}
+#leaves i:nth-of-type(12n) { -animation-delay: 4.1s;}
+#leaves i:nth-of-type(13n) { -animation-delay: 1s;  }
+#leaves i:nth-of-type(14n) { -animation-delay: 4.7s;}
+#leaves i:nth-of-type(15n) { -animation-delay: 3s;  }
 
 #leaves i:nth-of-type(n)    { background: linear-gradient(to bottom right, #309900, #005600); }
 #leaves i:nth-of-type(2n+2)  { background: linear-gradient(to bottom right, #5e9900, #2b5600); }
@@ -248,9 +250,9 @@ body {background: #222;}
 #leaves i:nth-of-type(n)    {transform: rotate(180deg);}
 
 
-#leaves i:nth-of-type(n) { -webkit-animation-timing-function:ease-in-out;}
+#leaves i:nth-of-type(n) { -animation-timing-function:ease-in-out;}
 
-@-webkit-keyframes falling {
+@keyframes falling {
     
     0% {
         -webkit-transform:
@@ -266,7 +268,7 @@ body {background: #222;}
     }
 }
 
-@-webkit-keyframes falling3 {
+@keyframes falling3 {
      0% {
         -webkit-transform:
             translate3d(0,0,0)
@@ -281,7 +283,7 @@ body {background: #222;}
     }
 }
 
-@-webkit-keyframes falling2 {
+@keyframes falling2 {
      0% {
         -webkit-transform:
             translate3d(0,0,0)
@@ -296,11 +298,14 @@ body {background: #222;}
     }
 }
 
+ folderStructure
 
+> main
 /*----skills----*/
 
 #skills{
     padding: 80px;
+ folderStructure
     background: #DB9714;
     color: #E5C263;
     padding-top: 10%;
@@ -310,6 +315,10 @@ body {background: #222;}
 .skillsimg{
     width: 300px;
     height: 300px;
+
+    background: #9F241D;
+    color: #E5C263;
+> main
 }
 
 .rows{
@@ -341,6 +350,7 @@ body {background: #222;}
     font-weight: 300;
 }
 
+ folderStructure
 #container{
     
     width: 100vw;
@@ -360,11 +370,15 @@ body {background: #222;}
 }
  
  /*----Education----*/
+
+/*----Education----*/
+ main
 #education{
     padding: 80px;
     background: #9F241D;
     color: #5D120F;
     text-align: center;
+ folderStructure
     padding-top: 7%;
 }
 
@@ -625,4 +639,12 @@ form .btn{
 
 /*----Responsiveness----*/
 
+
+}
+
+.table{
+    color:#9F241D
+}   
+
+ main
 
